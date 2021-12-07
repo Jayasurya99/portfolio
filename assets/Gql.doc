@@ -1,0 +1,76 @@
+GraphQL is a query language for your API, and a server-side runtime for executing queries using a type system you define for your data. 
+
+A GraphQL service is created by defining types and fields on those types, then providing functions for each field on each type. 
+
+After a GraphQL service is running (typically at a URL on a web service), it can receive GraphQL queries to validate and execute. The service first checks a query to ensure it only refers to the types and fields defined, and then runs the provided functions to produce a result.
+
+⦁	Get Exact Data
+⦁	Get all data in single request
+⦁	Query Lang - Plenty of server and client libraries are available
+⦁	Better altrenate for REST
+⦁	! -> Cannot be NULL
+⦁	Rest vs GraphQL
+⦁	Fields -> Login
+⦁	Arguments -> First: Last:
+⦁	Alias -> Different parameter FirstLoader: Followers (first: 3)
+⦁	Fragments -> For repeated field -> fragment userInfo(obj name) on User { id, bio etc  }
+	       -> ...userInfo 
+{} -> query query name { }
+Variables ->  $isOwner: Boolean!  ->($isOwner)
+/* Mutations ->
+mutation NewStatus ($input: ChangeUserStatusInput!) {
+  changeUserStatus(input:$input) {
+    clientMutationId
+    status{
+      message
+    }
+  }
+}
+query viewerInfo{
+  viewer {
+    login
+    avatarUrl
+    status{
+      id
+      message
+    }
+  }
+}
+
+QUERY VARIABLES:
+{
+  "input": {
+    "clientMutationId": "1010102",
+    "message": "hi hello"
+  }
+}*///////////////////////
+
+
+⦁	Declarative Data Fetching
+⦁	Strongly Typed Schema
+⦁	Superior Developer Experience
+⦁	Cost Effective
+⦁	Excellent community
+
+GrapQL Ecosysytem
+
+GraphQl Client :
+⦁	 Error Handling and schema validation
+⦁	Local State Management and Caching
+⦁	Pagination
+Popular GraphQl CLients :
+Apollo Client for Frameworks
+Realy only for React
+
+PRISMA LIBRARY
+server ----------------------- Prisma ------------------------------------ DB
+ code:
+TS - JS - GO - PYThon
+	|
+	| Prisma
+	|
+MySql- Mongo DB- Oracle
+bl
+
+
+ 
